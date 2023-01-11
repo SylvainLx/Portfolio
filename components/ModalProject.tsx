@@ -28,7 +28,8 @@ function ModalProject(props: Modal) {
               showStatus={false}
               transitionTime={1000}
               infiniteLoop={true}
-              width="100%"
+              className="w-full"
+              dynamicHeight
             >
               {props &&
                 props.img.map((image: StaticImageData) => {
