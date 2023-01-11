@@ -93,7 +93,6 @@ function Navbar() {
                         href={link.href}
                         scroll={false}
                         className="scroll-smooth text-xl duration-300 hover:text-yellow-500 focus:text-yellow-500 active:text-yellow-600"
-                        onClick={() => setNavbar(!navbar)}
                       >
                         {link.text}
                       </Link>
