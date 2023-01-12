@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-import photoPerso from "../public/photoPerso.jpeg";
+import photoPerso from "../public/photoPerso.webp";
 
 function Description() {
   return (

@@ -1,13 +1,13 @@
 import Image from "next/image";
 import React from "react";
 
-import Js from "../public/languagesIcon/js.png";
-import TS from "../public/languagesIcon/ts.png";
-import Reacts from "../public/languagesIcon/react.png";
-import Css from "../public/languagesIcon/css.png";
-import Html from "../public/languagesIcon/html.png";
-import Mysql from "../public/languagesIcon/mysql.png";
-import Node from "../public/languagesIcon/node.png";
+import Js from "../public/languagesIcon/js.webp";
+import TS from "../public/languagesIcon/ts.webp";
+import Reacts from "../public/languagesIcon/react.webp";
+import Css from "../public/languagesIcon/css.webp";
+import Html from "../public/languagesIcon/html.webp";
+import Mysql from "../public/languagesIcon/mysql.webp";
+import Node from "../public/languagesIcon/node.webp";
 
 function Intro() {
   const Img = [Html, Css, Js, Reacts, Node, TS, Mysql];
