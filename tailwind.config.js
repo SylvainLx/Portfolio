@@ -53,7 +53,7 @@ module.exports = {
         },
       },
       backgroundImage: {
-        backgroundInto: "url('../public/fondIntro.jpg')",
+        backgroundInto: "url('../public/fondIntro.webp')",
       },
     },
   },
