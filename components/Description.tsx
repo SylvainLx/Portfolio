@@ -38,7 +38,7 @@ function Description() {
           </p>
           <p className="w-full p-4 text-xl md:pr-24">
             Issu d&apos;une formation à la Wild Code School, je vous propose mes
-            servives pour la réalisation et la gestion de vos sites internet :
+            services pour la réalisation et la gestion de vos sites internet :
             site vitrine, mobile, e-commerce, blog, application web.
           </p>
           <p className="w-full p-4 text-xl md:pr-24">
