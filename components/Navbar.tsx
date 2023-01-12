@@ -40,6 +40,8 @@ function Navbar() {
             </a>
             <div className="md:hidden">
               <button
+                id="navbar"
+                aria-label="menu"
                 className="rounded-md p-2 text-gray-700 outline-none focus:border focus:border-gray-400"
                 onClick={() => setNavbar(!navbar)}
               >

@@ -122,15 +122,15 @@ function Card() {
               onClick={() => openModalProjects(projet.id)}
             >
               <Image
-                className="m-1 h-48 w-48 rounded-t-lg object-contain  md:h-2/5 md:w-2/5 md:max-w-md md:rounded-none md:rounded-l-lg"
+                className="m-1 h-48 w-48 rounded-t-lg object-contain md:h-2/5 md:w-2/5 md:max-w-md md:rounded-none md:rounded-l-lg"
                 src={projet.img}
                 alt={projet.alt}
               />
               <div className="flex flex-col justify-between overflow-hidden text-ellipsis p-4 leading-normal">
-                <p className="overflow-scroll text-ellipsis pb-2 text-left text-2xl font-bold text-gray-900 dark:text-white">
+                <p className="overflow-scroll text-ellipsis pb-2 text-left text-2xl font-bold dark:text-white">
                   {projet.title}
                 </p>
-                <p className="overflow-scroll text-ellipsis pb-2 text-left font-normal text-gray-700 dark:text-gray-400">
+                <p className="overflow-scroll text-ellipsis pb-2 text-left font-normal text-gray-300">
                   {projet.desc}
                 </p>
               </div>
