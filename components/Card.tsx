@@ -24,6 +24,16 @@ import logoP1 from "../public/sreenProject/logo-p1.png";
 import logoP2 from "../public/sreenProject/logo-p2.svg";
 import logoApside from "../public/sreenProject/logo-apside.png";
 import logoKids from "../public/sreenProject/logo-kids.png";
+import masterwild1 from "../public/sreenProject/masterwild1.png";
+import masterwild2 from "../public/sreenProject/masterwild2.png";
+import masterwild3 from "../public/sreenProject/masterwild3.png";
+import masterwild4 from "../public/sreenProject/masterwild4.png";
+import masterwild5 from "../public/sreenProject/masterwild5.png";
+import masterwild6 from "../public/sreenProject/masterwild6.png";
+import masterwild7 from "../public/sreenProject/masterwild7.png";
+import healthy1 from "../public/sreenProject/healthy1.png";
+import healthy2 from "../public/sreenProject/healthy2.png";
+import healthy3 from "../public/sreenProject/healthy3.png";
 
 type Projet = {
   id: number;
@@ -42,18 +52,24 @@ function Card() {
       title: "HealthyLife Elodie",
       desc: "Site vitrine visant à développer la visibilité dans le monde du numérique. Site en ligne",
       img: healthyLife,
-      imgs: [],
+      imgs: [healthy1, healthy2, healthy3],
       alt: "Logo HealthyLife",
-      url: "http://facebook.com",
     },
     {
       id: 2,
       title: "MasterWild",
       desc: "Projet d'école avec un vrai client, pour des Masterclass. Site en ligne",
       img: logoMasterwild,
-      imgs: [],
+      imgs: [
+        masterwild1,
+        masterwild2,
+        masterwild3,
+        masterwild4,
+        masterwild5,
+        masterwild6,
+        masterwild7,
+      ],
       alt: "Logo MasterWild",
-      url: "http://facebook.com",
     },
     {
       id: 5,
