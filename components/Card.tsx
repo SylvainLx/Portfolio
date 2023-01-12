@@ -50,7 +50,7 @@ function Card() {
     {
       id: 1,
       title: "HealthyLife Elodie",
-      desc: "Site vitrine visant à développer la visibilité dans le monde du numérique. Site en ligne",
+      desc: "Site vitrine visant à développer la visibilité dans le monde du numérique.",
       img: healthyLife,
       imgs: [healthy1, healthy2, healthy3],
       alt: "Logo HealthyLife",
@@ -58,7 +58,7 @@ function Card() {
     {
       id: 2,
       title: "MasterWild",
-      desc: "Projet d'école avec un vrai client, pour des Masterclass. Site en ligne",
+      desc: "Projet d'école avec un vrai client, pour des Masterclass.",
       img: logoMasterwild,
       imgs: [
         masterwild1,
@@ -74,7 +74,7 @@ function Card() {
     {
       id: 5,
       title: "Triangle project",
-      desc: "Premier cas d'école en HTML/CSS/JS, création d'un quizz avec plusieurs thèmes et un ranking",
+      desc: "Premier cas d'école en HTML/CSS/JS, création d'un quizz avec plusieurs thèmes et un ranking.",
       img: logoP1,
       imgs: [game1, game2, game3],
       alt: "Logo photo triangle",
@@ -82,7 +82,7 @@ function Card() {
     {
       id: 6,
       title: "Cocktail Finder",
-      desc: "Second cas d'école sous React, création d'un site grâce à une API",
+      desc: "Second cas d'école sous React, création d'un site grâce à une API.",
       img: logoP2,
       imgs: [cocktail1, cocktail2, cocktail3],
       alt: "Logo photo cocktail",
@@ -90,7 +90,7 @@ function Card() {
     {
       id: 3,
       title: "Ecolo KIDS",
-      desc: "Premier hackathon site full stack en 48h pour but de sensibiliter les enfants au 'Do It Yourself'",
+      desc: "Premier Hackathon site full stack en 48h pour but de sensibiliter les enfants au 'Do It Yourself'.",
       img: logoKids,
       imgs: [kids1, kids2, kids3, kids4],
       alt: "Logo Ecolo KIDS",
@@ -98,7 +98,7 @@ function Card() {
     {
       id: 4,
       title: "Plateforme APSIDE",
-      desc: "Second hackathon site full stack en 72h, création d'une plateforme",
+      desc: "Second Hackathon site full stack en 72h, création d'une plateforme.",
       img: logoApside,
       imgs: [apside1, apside2, apside3, apside4, apside5],
       alt: "Logo photos APSIDE",

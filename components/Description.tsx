@@ -10,13 +10,13 @@ function Description() {
       id="description"
       className="relative mt-4 flex w-full flex-col items-center justify-center lg:p-8"
     >
-      <h1 className="m-8 font-mono text-4xl text-gray-100 md:text-6xl">
+      <h1 className="m-8 overflow-x-hidden font-mono text-4xl text-gray-100 md:text-6xl">
         Bonjour ! Moi c&apos;est <br className="block md:hidden" />
-        <span className="relative">
+        <span className="relative ">
           <span className="text-brand-accent h-20 overflow-x-hidden whitespace-nowrap pt-2">
             Sylvain <span className="text-3xl md:text-5xl">👋</span>
           </span>
-          <span className="cursor will-change absolute -bottom-0 left-0 -top-1 inline-block w-full animate-type bg-[#383331]"></span>
+          <span className="cursor will-change absolute -bottom-0 left-0 -top-1 inline-block w-full animate-type overflow-x-hidden  bg-[#383331]"></span>
         </span>
       </h1>
 
@@ -28,8 +28,8 @@ function Description() {
         />
         <div className="flex flex-col">
           <p className="w-full p-4 text-xl md:pr-24">
-            Je me présente, Sylvain LEGUAY, j&apos;ai 30 ans, je suis en couple
-            et papa de 3 enfants.
+            Je me présente, j&apos;ai 30 ans, je suis en couple et papa de 3
+            enfants.
           </p>
           <p className="w-full p-4 text-xl md:pr-24">
             Après 7 ans en tant que Chef de rayon dans la grande distribution,
@@ -54,11 +54,11 @@ function Description() {
           Me contacter
         </Link>
         <a
-          href="../public/SylvainLEGUAY_CV.pdf"
+          href="/SylvainLEGUAY_CV.pdf"
           download
           className="flex h-12 w-48 items-center justify-center rounded-xl border-2 border-stone-800 bg-[#655A4E] text-center shadow-md duration-300 hover:scale-110 hover:border-2  hover:shadow-lg"
         >
-          Plus d&apos;info
+          Plus d&apos;infos
         </a>
       </div>
     </div>
