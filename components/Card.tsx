@@ -115,61 +115,35 @@ function Card() {
   return (
     <div className="flex flex-col md:grid md:grid-cols-2 lg:p-10 2xl:grid-cols-3 ">
       {projets.map((projet) => {
-        if (projet.url) {
-          return (
-            <a
-              key={projet.title}
-              href={projet.url}
-              target="_blank"
-              rel="noreferrer"
-              className="m-6 flex flex-col items-center rounded-lg border-2 border-stone-800 bg-[#655A4E] shadow-md duration-300 hover:scale-105 dark:hover:bg-[#5C534A] md:h-56 md:max-w-xl lg:h-64 lg:flex-row"
+        return (
+          <div key={projet.id}>
+            <button
+              className="m-6 flex flex-col items-center text-ellipsis rounded-lg border-2 border-stone-800 bg-[#655A4E] shadow-md duration-300 hover:scale-105 hover:bg-[#5C534A] md:h-56 md:max-w-xl lg:h-64 lg:flex-row"
+              onClick={() => openModalProjects(projet.id)}
             >
               <Image
-                className="m-1 h-48 w-48 rounded-t-lg object-contain md:h-2/5 md:w-2/5 md:max-w-md md:rounded-none md:rounded-l-lg "
+                className="m-1 h-48 w-48 rounded-t-lg object-contain  md:h-2/5 md:w-2/5 md:max-w-md md:rounded-none md:rounded-l-lg"
                 src={projet.img}
                 alt={projet.alt}
               />
-              <div className="flex flex-col justify-between overflow-hidden p-4 leading-normal">
-                <h5 className="overflow-scroll text-ellipsis pb-2 text-left text-2xl font-bold text-gray-900 dark:text-white">
+              <div className="flex flex-col justify-between overflow-hidden text-ellipsis p-4 leading-normal">
+                <p className="overflow-scroll text-ellipsis pb-2 text-left text-2xl font-bold text-gray-900 dark:text-white">
                   {projet.title}
-                </h5>
+                </p>
                 <p className="overflow-scroll text-ellipsis pb-2 text-left font-normal text-gray-700 dark:text-gray-400">
                   {projet.desc}
                 </p>
               </div>
-            </a>
-          );
-        } else {
-          return (
-            <div key={projet.id}>
-              <button
-                className="m-6 flex flex-col items-center text-ellipsis rounded-lg border-2 border-stone-800 bg-[#655A4E] shadow-md duration-300 hover:scale-105 hover:bg-[#5C534A] md:h-56 md:max-w-xl lg:h-64 lg:flex-row"
-                onClick={() => openModalProjects(projet.id)}
-              >
-                <Image
-                  className="m-1 h-48 w-48 rounded-t-lg object-contain  md:h-2/5 md:w-2/5 md:max-w-md md:rounded-none md:rounded-l-lg"
-                  src={projet.img}
-                  alt={projet.alt}
-                />
-                <div className="flex flex-col justify-between overflow-hidden text-ellipsis p-4 leading-normal">
-                  <h5 className="overflow-scroll text-ellipsis pb-2 text-left text-2xl font-bold text-gray-900 dark:text-white">
-                    {projet.title}
-                  </h5>
-                  <p className="overflow-scroll text-ellipsis pb-2 text-left font-normal text-gray-700 dark:text-gray-400">
-                    {projet.desc}
-                  </p>
-                </div>
-              </button>
-              {showModal === projet.id && (
-                <ModalProject
-                  openModalProjects={openModalProjects}
-                  title={projet.title}
-                  img={projet.imgs}
-                />
-              )}
-            </div>
-          );
-        }
+            </button>
+            {showModal === projet.id && (
+              <ModalProject
+                openModalProjects={openModalProjects}
+                title={projet.title}
+                img={projet.imgs}
+              />
+            )}
+          </div>
+        );
       })}
     </div>
   );
