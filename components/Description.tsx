@@ -24,7 +24,7 @@ function Description() {
         <Image
           src={photoPerso}
           alt="photo Sylvain Leguay"
-          className="h-72 w-72 rounded-lg border-2 border-stone-800 shadow-lg shadow-stone-800 md:h-96 md:w-96 "
+          className="h-auto w-72 rounded-lg border-2 border-stone-800 shadow-lg shadow-stone-800 md:h-96 md:w-96 "
         />
         <div className="flex flex-col">
           <p className="w-full p-4 text-xl md:pr-24">
