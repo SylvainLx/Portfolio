@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 
 import Js from "../public/languagesIcon/js.png";
-import TS from "../public/languagesIcon/typescript.png";
+import TS from "../public/languagesIcon/ts.png";
 import Reacts from "../public/languagesIcon/react.png";
 import Css from "../public/languagesIcon/css.png";
 import Html from "../public/languagesIcon/html.png";
@@ -24,7 +24,7 @@ function Intro() {
                   <Image
                     src={img}
                     alt="logo"
-                    className="m-2 h-24 w-24 animate-fade-in-down space-x-2 rounded-lg p-1 shadow shadow-white md:m-4 lg:m-5"
+                    className="m-2 h-24 w-24 animate-fade-in-down space-x-2 rounded-lg p-2 shadow shadow-white md:m-4 lg:m-5"
                   />
                 </div>
               );
