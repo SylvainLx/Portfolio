@@ -24,7 +24,9 @@ function Intro() {
                   <Image
                     src={img}
                     alt="logo"
-                    className="m-2 h-24 w-auto animate-fade-in-down space-x-2 rounded-lg object-cover p-2 shadow shadow-white md:m-4 lg:m-5"
+                    height={96}
+                    width={96}
+                    className="m-2 animate-fade-in-down space-x-2 rounded-lg object-cover p-2 shadow shadow-white md:m-4 lg:m-5"
                   />
                 </div>
               );
