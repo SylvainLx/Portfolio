@@ -15,7 +15,7 @@ function ModalProject(props: Modal) {
   return (
     <>
       <div className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto overflow-x-hidden outline-none focus:outline-none">
-        <div className="relative my-6 mx-auto flex w-[90%] max-w-4xl flex-col  items-end rounded-lg bg-[#383331] lg:w-screen">
+        <div className="relative my-6 mx-auto flex h-[70%] w-[90%] max-w-4xl flex-col  items-end rounded-lg bg-[#383331] lg:w-screen">
           <button
             className="background-transparent mr-1 mb-1 w-min px-6 py-2 text-end text-xl font-bold uppercase outline-none transition-all duration-150 ease-linear hover:scale-125 focus:outline-none"
             type="button"
@@ -30,13 +30,12 @@ function ModalProject(props: Modal) {
               transitionTime={1000}
               infiniteLoop={true}
               className="w-full"
-              dynamicHeight
             >
               {props &&
                 props.img.map((image: StaticImageData) => {
                   return (
                     <div key={image.src}>
-                      <p className="pb-2 text-xl">{props.modalDesc}</p>
+                      <p className="pb-5 text-xl">{props.modalDesc}</p>
                       <Image src={image} alt="carousel projet" />
                     </div>
                   );

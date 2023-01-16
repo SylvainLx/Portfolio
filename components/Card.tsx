@@ -89,7 +89,7 @@ function Card() {
       title: "Cocktail Finder",
       desc: "Site web de recherche de Cocktails, avec leurs recettes.",
       modalDesc:
-        "Site de recherche de Cocktail, avec leurs recettes. Cas d'école pour apprendre à faire des call API. Stack : ReactJS.",
+        "Site de recherche de Cocktails, avec leurs recettes. Cas d'école pour apprendre à faire des call API. Stack : ReactJS.",
       img: logoP2,
       imgs: [cocktail1, cocktail2, cocktail3],
       alt: "Logo photo cocktail",
@@ -97,8 +97,9 @@ function Card() {
     {
       id: 3,
       title: "Ecolo KIDS",
-      desc: "Hackathon 48h. Sujet : sensibiliter les enfants au 'Do It Yourself'.",
-      modalDesc: "Stack : ReactJS, NodeJS, MySQL, Prisma, ChakraUI.",
+      desc: "Hackathon 48h. Sujet : sensibiliser les enfants au 'Do It Yourself'.",
+      modalDesc:
+        "Sensibiliser les enfants au DIY avec des idées d'activités ludiques. Stack : ReactJS, NodeJS, MySQL, Prisma, ChakraUI.",
       img: logoKids,
       imgs: [kids1, kids2, kids3, kids4],
       alt: "Logo Ecolo KIDS",
@@ -107,7 +108,8 @@ function Card() {
       id: 4,
       title: "Plateforme APSIDE",
       desc: "Hackathon 72h. Sujet : création d'une plateforme interne entreprise. ",
-      modalDesc: "Stack : ReactJS, NodeJS, MySQL, Prisma, ChakraUI.",
+      modalDesc:
+        "Création d'une placeteforme interne pour centraliser l'attribution des tâches de chacun. Stack : ReactJS, NodeJS, MySQL, Prisma, ChakraUI.",
       img: logoApside,
       imgs: [apside1, apside2, apside3, apside4, apside5],
       alt: "Logo photos APSIDE",
