@@ -26,6 +26,7 @@ function Intro() {
                     alt="logo"
                     height={96}
                     width={96}
+                    sizes="(max-width: 700px) 50px"
                     className="m-2 animate-fade-in-down space-x-2 rounded-lg object-cover p-2 shadow shadow-white md:m-4 lg:m-5"
                   />
                 </div>
