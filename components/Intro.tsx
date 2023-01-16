@@ -17,7 +17,7 @@ function Intro() {
       <div className="align-center items-left flex flex-col p-12 leading-10 md:p-20 ">
         <h2 className="text-4xl text-white md:text-6xl">DEVELOPPEUR WEB</h2>
         <div className="flex flex-col p-4">
-          <div className="grid grid-cols-3 md:grid-cols-4 lg:flex lg:flex-row">
+          <div className="m-2 grid grid-cols-3 md:grid-cols-4 lg:flex lg:flex-row">
             {Img.map((img) => {
               return (
                 <div key={img.src}>
@@ -38,8 +38,9 @@ function Intro() {
             <p className="animate-fade-in-right3 text-xl">
               JavaScript - TypeScript
             </p>
-            <p className="animate-fade-in-right4 text-xl">NextJS - MySQL</p>
-            <p className="animate-fade-in-right5 text-xl">
+            <p className="animate-fade-in-right4 text-xl">NextJS</p>
+            <p className="animate-fade-in-right5 text-xl">MySQL - Prisma</p>
+            <p className="animate-fade-in-right6 text-xl">
               MaterialUI - ChakraUI - TailwindCSS
             </p>
           </div>

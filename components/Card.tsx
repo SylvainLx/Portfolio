@@ -25,7 +25,6 @@ import logoP2 from "../public/sreenProject/logo-p2.svg";
 import logoApside from "../public/sreenProject/logo-apside.png";
 import logoKids from "../public/sreenProject/logo-kids.png";
 import masterwild1 from "../public/sreenProject/masterwild1.png";
-import masterwild2 from "../public/sreenProject/masterwild2.png";
 import masterwild3 from "../public/sreenProject/masterwild3.png";
 import masterwild4 from "../public/sreenProject/masterwild4.png";
 import masterwild5 from "../public/sreenProject/masterwild5.png";
@@ -39,6 +38,7 @@ type Projet = {
   id: number;
   title: string;
   desc: string;
+  modalDesc: string;
   img: StaticImageData;
   imgs: StaticImageData[];
   alt: string;
@@ -50,7 +50,9 @@ function Card() {
     {
       id: 1,
       title: "HealthyLife Elodie",
-      desc: "Site vitrine visant à développer la visibilité dans le monde du numérique.",
+      desc: "Site internet vitrine Healthy Life Elodie de présentation et prise de contact.",
+      modalDesc:
+        "Ce site a pour objectif de présenter et développer son activité avec l'aide du web. Stack : ReactJS, NodeJS, MySQL, Prisma",
       img: healthyLife,
       imgs: [healthy1, healthy2, healthy3],
       alt: "Logo HealthyLife",
@@ -58,11 +60,12 @@ function Card() {
     {
       id: 2,
       title: "MasterWild",
-      desc: "Projet d'école avec un vrai client, pour des Masterclass.",
+      desc: "Plateforme de masterclass d'intervenant pour la WildCodeSchool.",
+      modalDesc:
+        "Plateforme de masterclass pour la WildCodeSchool, pour but de les centraliser et partager celles-ci à destination des élèves, prospects et professionnels. Stack : ReactJS, NodeJS, MySQL, Prisma.",
       img: logoMasterwild,
       imgs: [
         masterwild1,
-        masterwild2,
         masterwild3,
         masterwild4,
         masterwild5,
@@ -74,7 +77,9 @@ function Card() {
     {
       id: 5,
       title: "Triangle project",
-      desc: "Premier cas d'école en HTML/CSS/JS, création d'un quizz avec plusieurs thèmes et un ranking.",
+      desc: "Création d'un quizz avec plusieurs thèmes et un ranking.",
+      modalDesc:
+        "Création d'un quizz avec plusieurs thèmes et un ranking. Cas d'école pour découvrir l'environnement HTML, CSS et intro en JavaScript.",
       img: logoP1,
       imgs: [game1, game2, game3],
       alt: "Logo photo triangle",
@@ -82,7 +87,9 @@ function Card() {
     {
       id: 6,
       title: "Cocktail Finder",
-      desc: "Second cas d'école sous React, création d'un site grâce à une API.",
+      desc: "Site web de recherche de Cocktails, avec leurs recettes.",
+      modalDesc:
+        "Site de recherche de Cocktail, avec leurs recettes. Cas d'école pour apprendre à faire des call API. Stack : ReactJS.",
       img: logoP2,
       imgs: [cocktail1, cocktail2, cocktail3],
       alt: "Logo photo cocktail",
@@ -90,7 +97,8 @@ function Card() {
     {
       id: 3,
       title: "Ecolo KIDS",
-      desc: "Premier Hackathon site full stack en 48h pour but de sensibiliter les enfants au 'Do It Yourself'.",
+      desc: "Hackathon 48h. Sujet : sensibiliter les enfants au 'Do It Yourself'.",
+      modalDesc: "Stack : ReactJS, NodeJS, MySQL, Prisma, ChakraUI.",
       img: logoKids,
       imgs: [kids1, kids2, kids3, kids4],
       alt: "Logo Ecolo KIDS",
@@ -98,7 +106,8 @@ function Card() {
     {
       id: 4,
       title: "Plateforme APSIDE",
-      desc: "Second Hackathon site full stack en 72h, création d'une plateforme.",
+      desc: "Hackathon 72h. Sujet : création d'une plateforme interne entreprise. ",
+      modalDesc: "Stack : ReactJS, NodeJS, MySQL, Prisma, ChakraUI.",
       img: logoApside,
       imgs: [apside1, apside2, apside3, apside4, apside5],
       alt: "Logo photos APSIDE",
@@ -118,19 +127,21 @@ function Card() {
         return (
           <div key={projet.id}>
             <button
-              className="m-6 flex flex-col items-center text-ellipsis rounded-lg border-2 border-stone-800 bg-[#655A4E] shadow-md duration-300 hover:scale-105 hover:bg-[#5C534A] md:h-56 md:max-w-xl lg:h-64 lg:flex-row"
+              className="m-6 flex flex-col items-center overflow-scroll rounded-lg border-2 border-stone-800 bg-[#655A4E] shadow-md duration-300 hover:scale-105 hover:bg-[#5C534A] md:h-56 md:max-w-xl lg:h-64 lg:flex-row"
               onClick={() => openModalProjects(projet.id)}
             >
               <Image
-                className="m-1 h-48 w-48 rounded-t-lg object-contain md:h-2/5 md:w-2/5 md:max-w-md md:rounded-none md:rounded-l-lg"
+                className="rounded-t-lg object-contain p-1 md:h-2/5 md:w-2/5 md:max-w-md md:rounded-none md:rounded-l-lg"
+                height={150}
+                width={150}
                 src={projet.img}
                 alt={projet.alt}
               />
-              <div className="flex flex-col justify-between overflow-hidden text-ellipsis p-4 leading-normal">
-                <p className="overflow-scroll text-ellipsis pb-2 text-left text-2xl font-bold dark:text-white">
+              <div className="flex flex-col justify-between overflow-scroll text-ellipsis p-4 leading-normal">
+                <p className="pb-2 text-left text-2xl font-bold text-white">
                   {projet.title}
                 </p>
-                <p className="overflow-scroll text-ellipsis pb-2 text-left font-normal text-gray-300">
+                <p className="text-ellipsis text-left text-xl font-normal text-gray-300">
                   {projet.desc}
                 </p>
               </div>
@@ -140,6 +151,7 @@ function Card() {
                 openModalProjects={openModalProjects}
                 title={projet.title}
                 img={projet.imgs}
+                modalDesc={projet.modalDesc}
               />
             )}
           </div>

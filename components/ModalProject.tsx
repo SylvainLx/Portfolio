@@ -7,6 +7,7 @@ import { Carousel } from "react-responsive-carousel";
 type Modal = {
   title: string;
   openModalProjects: () => void;
+  modalDesc: string;
   img: StaticImageData[];
 };
 
@@ -22,7 +23,7 @@ function ModalProject(props: Modal) {
           >
             X
           </button>
-          <div className="relative flex w-full flex-col items-center space-y-12 rounded-lg border-0 bg-[#383331] text-3xl shadow-lg outline-none focus:outline-none">
+          <div className="relative flex h-fit w-full flex-col items-center space-y-12 rounded-lg border-0 bg-[#383331] text-3xl shadow-lg outline-none focus:outline-none">
             <p className="shadow-xl">{props.title}</p>
             <Carousel
               showStatus={false}
@@ -35,6 +36,7 @@ function ModalProject(props: Modal) {
                 props.img.map((image: StaticImageData) => {
                   return (
                     <div key={image.src}>
+                      <p className="pb-2 text-xl">{props.modalDesc}</p>
                       <Image src={image} alt="carousel projet" />
                     </div>
                   );

@@ -11,10 +11,11 @@ module.exports = {
       animation: {
         type: "type 2.2s ease-out .8s infinite alternate both",
         "fade-in-right": "fade-in-right 1s ease-out",
-        "fade-in-right2": "fade-in-right 1.3s ease-out",
-        "fade-in-right3": "fade-in-right 1.6s ease-out",
-        "fade-in-right4": "fade-in-right 1.9s ease-out",
-        "fade-in-right5": "fade-in-right 2.2s ease-out",
+        "fade-in-right2": "fade-in-right 1.2s ease-out",
+        "fade-in-right3": "fade-in-right 1.4s ease-out",
+        "fade-in-right4": "fade-in-right 1.6s ease-out",
+        "fade-in-right5": "fade-in-right 1.8s ease-out",
+        "fade-in-right6": "fade-in-right 2.0s ease-out",
         "fade-in-down": "fade-in-down 1s ease-out",
       },
 

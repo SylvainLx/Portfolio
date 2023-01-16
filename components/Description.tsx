@@ -46,6 +46,9 @@ function Description() {
           <p className="w-full p-4 text-xl md:pr-24">
             En naviguant sur mon site, vous trouverez mes réalisations.
           </p>
+          <p className="w-full p-4 text-xl md:pr-24">
+            Portfolio réalisé avec TypeScript, NextJS et TailwindCSS
+          </p>
         </div>
       </div>
       <div className="flex flex-row space-x-4 md:mt-12 md:space-x-48 ">
