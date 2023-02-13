@@ -10,7 +10,7 @@ function Description() {
       id="description"
       className="relative mt-4 flex w-full flex-col items-center justify-center lg:p-8"
     >
-      <h1 className="m-8 overflow-x-hidden font-mono text-4xl text-gray-100 md:text-6xl">
+      <h1 className="m-8 select-none overflow-x-hidden overflow-y-hidden font-mono text-4xl text-gray-100 md:text-6xl">
         Bonjour ! Moi c&apos;est <br className="block md:hidden" />
         <span className="relative ">
           <span className="text-brand-accent h-20 overflow-x-hidden whitespace-nowrap pt-2">
@@ -26,27 +26,28 @@ function Description() {
           alt="photo Sylvain Leguay"
           height={288}
           width={288}
+          draggable={false}
           className=" rounded-lg border-2 border-stone-800 shadow-lg shadow-stone-800 md:h-96 md:w-96 "
         />
         <div className="flex flex-col">
-          <p className="w-full p-4 text-xl md:pr-24">
+          <p className="w-full select-none p-4 text-xl md:pr-24">
             Je me présente, j&apos;ai 30 ans, je suis en couple et papa de 3
             enfants.
           </p>
-          <p className="w-full p-4 text-xl md:pr-24">
+          <p className="w-full select-none p-4  text-xl md:pr-24">
             Après 7 ans en tant que Chef de rayon dans la grande distribution,
             j&apos;ai décidé de me reconvertir dans un domaine qui me plait
             depuis toujours : Le numérique.
           </p>
-          <p className="w-full p-4 text-xl md:pr-24">
+          <p className="w-full select-none p-4  text-xl md:pr-24">
             Issu d&apos;une formation à la Wild Code School, je vous propose mes
             services pour la réalisation et la gestion de vos sites internet :
             site vitrine, mobile, e-commerce, blog, application web.
           </p>
-          <p className="w-full p-4 text-xl md:pr-24">
+          <p className="w-full select-none p-4  text-xl md:pr-24">
             En naviguant sur mon site, vous trouverez mes réalisations.
           </p>
-          <p className="w-full p-4 text-xl md:pr-24">
+          <p className="w-full select-none p-4  text-xl md:pr-24">
             Portfolio réalisé avec TypeScript, NextJS et TailwindCSS
           </p>
         </div>
@@ -54,7 +55,7 @@ function Description() {
       <div className="flex flex-row space-x-4 md:mt-12 md:space-x-48 ">
         <Link
           href="mailto:leguay.sylvain40@gmail.com"
-          className="flex h-12 w-48 items-center justify-center rounded-xl border-2 border-stone-800 bg-[#655A4E] shadow-md duration-300 hover:scale-110 hover:border-2  hover:shadow-lg"
+          className="flex h-12 w-36 items-center justify-center rounded-xl border-2 border-stone-800 bg-[#655A4E] shadow-md duration-300 hover:scale-110 hover:border-2 hover:shadow-lg  md:w-48"
         >
           Me contacter
         </Link>

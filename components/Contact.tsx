@@ -35,7 +35,7 @@ function Contact() {
   return (
     <div
       id="contact"
-      className="flex h-24 w-screen flex-row items-center justify-center space-x-2 bg-gradient-to-t from-black pl-2 md:space-x-8 md:pl-6 lg:space-x-24 "
+      className="flex h-24 w-screen flex-row items-center justify-center space-x-2 overflow-hidden overflow-hidden bg-gradient-to-t from-black pl-2 md:space-x-8 md:pl-6 lg:space-x-24 "
     >
       {Links &&
         Links.map((link) => {
@@ -57,6 +57,7 @@ function Contact() {
           className="fixed right-3 bottom-20 z-40 scroll-smooth hover:scale-125 lg:right-12 lg:bottom-8"
           height={50}
           width={50}
+          draggable={false}
         />
       </a>
     </div>

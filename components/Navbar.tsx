@@ -34,7 +34,7 @@ function Navbar() {
         <div>
           <div className="flex items-center justify-between py-3 md:block md:py-5">
             <a href="#">
-              <h2 className="text-2xl font-bold  text-white duration-300 hover:text-yellow-500">
+              <h2 className="select-none text-2xl  font-bold  text-white duration-300 hover:text-yellow-500">
                 Sylvain LEGUAY
               </h2>
             </a>

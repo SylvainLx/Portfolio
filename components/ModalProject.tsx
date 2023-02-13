@@ -24,7 +24,7 @@ function ModalProject(props: Modal) {
             X
           </button>
           <div className="relative flex h-fit w-full flex-col items-center space-y-12 rounded-lg border-0 bg-[#383331] text-3xl shadow-lg outline-none focus:outline-none">
-            <p className="shadow-xl">{props.title}</p>
+            <p className="select-none shadow-xl ">{props.title}</p>
             <Carousel
               showStatus={false}
               transitionTime={1000}
@@ -35,8 +35,14 @@ function ModalProject(props: Modal) {
                 props.img.map((image: StaticImageData) => {
                   return (
                     <div key={image.src}>
-                      <p className="pb-5 text-xl">{props.modalDesc}</p>
-                      <Image src={image} alt="carousel projet" />
+                      <p className="select-none pb-5  text-xl">
+                        {props.modalDesc}
+                      </p>
+                      <Image
+                        src={image}
+                        alt="carousel projet"
+                        draggable={false}
+                      />
                     </div>
                   );
                 })}
