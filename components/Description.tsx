@@ -62,7 +62,7 @@ function Description() {
         <a
           href="/SylvainLEGUAY_CV.pdf"
           download
-          className="flex h-12 w-48 items-center justify-center rounded-xl border-2 border-stone-800 bg-[#655A4E] text-center shadow-md duration-300 hover:scale-110 hover:border-2  hover:shadow-lg"
+          className="flex h-12 w-36 items-center justify-center rounded-xl border-2 border-stone-800 bg-[#655A4E] text-center shadow-md duration-300 hover:scale-110 hover:border-2 hover:shadow-lg  md:w-48"
         >
           Plus d&apos;infos
         </a>
