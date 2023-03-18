@@ -129,7 +129,7 @@ function Card() {
         return (
           <div key={projet.id} className="overflow-hidden">
             <button
-              className="m-6 flex flex-col items-center overflow-scroll rounded-lg border-2 border-stone-800 bg-[#655A4E] shadow-md duration-300 hover:scale-105 hover:bg-[#5C534A] md:h-56 md:max-w-xl lg:h-64 lg:flex-row"
+              className="m-6 flex flex-col items-center overflow-hidden rounded-lg border-2 border-stone-800 bg-[#655A4E] shadow-md duration-300 hover:scale-105 hover:bg-[#5C534A] md:h-56 md:max-w-xl lg:h-64 lg:flex-row"
               onClick={() => openModalProjects(projet.id)}
             >
               <Image
@@ -140,11 +140,11 @@ function Card() {
                 alt={projet.alt}
                 draggable={false}
               />
-              <div className="flex flex-col justify-between overflow-scroll text-ellipsis p-4 leading-normal">
+              <div className="flex flex-col justify-between overflow-hidden text-ellipsis p-4 leading-normal">
                 <p className="select-none  pb-2 text-left text-2xl font-bold text-white">
                   {projet.title}
                 </p>
-                <p className="select-none  text-ellipsis text-left text-xl font-normal text-gray-300">
+                <p className="select-none text-ellipsis text-left text-xl font-normal text-gray-300">
                   {projet.desc}
                 </p>
               </div>
