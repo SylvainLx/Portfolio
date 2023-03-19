@@ -10,11 +10,11 @@ function Description() {
       id="description"
       className="relative mt-4 flex w-full flex-col items-center justify-center overflow-x-hidden overflow-y-hidden lg:p-8"
     >
-      <h1 className="m-8 select-none overflow-x-hidden overflow-y-hidden font-mono text-4xl text-gray-100 md:text-6xl">
+      <h1 className="m-8 select-none overflow-x-hidden overflow-y-hidden font-mono text-4xl text-gray-100 md:text-6xl md:leading-normal">
         Bonjour ! Moi c&apos;est <br className="block md:hidden" />
         <span className="relative ">
           <span className="text-brand-accent h-20 overflow-x-hidden overflow-y-hidden whitespace-nowrap pt-2">
-            Sylvain <span className="text-3xl md:text-5xl">👋</span>
+            Sylvain <span className=" text-3xl md:text-5xl">👋</span>
           </span>
           <span className="cursor will-change absolute -bottom-0 left-0 -top-1 inline-block w-full animate-type overflow-x-hidden overflow-y-hidden  bg-[#383331]"></span>
         </span>
