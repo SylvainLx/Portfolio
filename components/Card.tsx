@@ -33,6 +33,7 @@ import masterwild7 from "../public/sreenProject/masterwild7.png";
 import healthy1 from "../public/sreenProject/healthy1.png";
 import healthy2 from "../public/sreenProject/healthy2.png";
 import healthy3 from "../public/sreenProject/healthy3.png";
+import decoevasion from "../public/sreenProject/decoevasion.png";
 
 type Projet = {
   id: number;
@@ -49,8 +50,18 @@ function Card() {
   const projets: Projet[] = [
     {
       id: 1,
+      title: "Deco-Evasion",
+      desc: "Site vitrine d'une entrepreneuse de décoration.",
+      modalDesc: "Deco evasion",
+      img: decoevasion,
+      imgs: [decoevasion, decoevasion],
+      alt: "Logo DecoEvasion",
+      url: "https://deco-evasion.fr/",
+    },
+    {
+      id: 2,
       title: "HealthyLife Elodie",
-      desc: "Site internet vitrine Healthy Life Elodie de présentation et prise de contact.",
+      desc: "Site vitrine Healthy Life Elodie.",
       modalDesc:
         "Ce site a pour objectif de présenter et développer son activité avec l'aide du web. Stack : ReactJS, NodeJS, MySQL, Prisma",
       img: healthyLife,
@@ -58,7 +69,7 @@ function Card() {
       alt: "Logo HealthyLife",
     },
     {
-      id: 2,
+      id: 3,
       title: "MasterWild",
       desc: "Plateforme de masterclass d'intervenant pour la WildCodeSchool.",
       modalDesc:
@@ -75,9 +86,9 @@ function Card() {
       alt: "Logo MasterWild",
     },
     {
-      id: 5,
+      id: 6,
       title: "Triangle project",
-      desc: "Création d'un quizz avec plusieurs thèmes et un ranking.",
+      desc: "Quizz avec plusieurs thèmes et un ranking.",
       modalDesc:
         "Création d'un quizz avec plusieurs thèmes et un ranking. Cas d'école pour découvrir l'environnement HTML, CSS et intro en JavaScript.",
       img: logoP1,
@@ -85,7 +96,7 @@ function Card() {
       alt: "Logo photo triangle",
     },
     {
-      id: 6,
+      id: 7,
       title: "Cocktail Finder",
       desc: "Site web de recherche de Cocktails, avec leurs recettes.",
       modalDesc:
@@ -95,9 +106,9 @@ function Card() {
       alt: "Logo photo cocktail",
     },
     {
-      id: 3,
+      id: 4,
       title: "Ecolo KIDS",
-      desc: "Hackathon 48h. Sujet : sensibiliser les enfants au 'Do It Yourself'.",
+      desc: "Hackathon 48h : Sensibiliser les enfants au 'Do It Yourself'.",
       modalDesc:
         "Sensibiliser les enfants au DIY avec des idées d'activités ludiques. Stack : ReactJS, NodeJS, MySQL, Prisma, ChakraUI.",
       img: logoKids,
@@ -105,9 +116,9 @@ function Card() {
       alt: "Logo Ecolo KIDS",
     },
     {
-      id: 4,
+      id: 5,
       title: "Plateforme APSIDE",
-      desc: "Hackathon 72h. Sujet : création d'une plateforme interne entreprise. ",
+      desc: "Hackathon 72h : Plateforme interne entreprise. ",
       modalDesc:
         "Création d'une placeteforme interne pour centraliser l'attribution des tâches de chacun. Stack : ReactJS, NodeJS, MySQL, Prisma, ChakraUI.",
       img: logoApside,
@@ -128,27 +139,53 @@ function Card() {
       {projets.map((projet) => {
         return (
           <div key={projet.id} className="overflow-hidden">
-            <button
-              className="m-6 flex flex-col items-center overflow-hidden rounded-lg border-2 border-stone-800 bg-[#655A4E] shadow-md duration-300 hover:scale-105 hover:bg-[#5C534A] md:h-56 md:max-w-xl lg:h-64 lg:flex-row"
-              onClick={() => openModalProjects(projet.id)}
-            >
-              <Image
-                className="rounded-t-lg object-contain p-1 md:h-2/5 md:w-2/5 md:max-w-md md:rounded-none md:rounded-l-lg"
-                height={150}
-                width={150}
-                src={projet.img}
-                alt={projet.alt}
-                draggable={false}
-              />
-              <div className="flex flex-col justify-between overflow-hidden text-ellipsis p-4 leading-normal">
-                <p className="select-none  pb-2 text-left text-2xl font-bold text-white">
-                  {projet.title}
-                </p>
-                <p className="select-none text-ellipsis text-left text-xl font-normal text-gray-300">
-                  {projet.desc}
-                </p>
-              </div>
-            </button>
+            {projet.url ? (
+              <a
+                className="m-6 flex flex-col items-center overflow-hidden rounded-lg border-2 border-stone-800 bg-[#655A4E] shadow-md duration-300 hover:scale-105 hover:bg-[#5C534A] md:h-56 md:max-w-xl lg:h-64 lg:flex-row"
+                href={projet.url}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Image
+                  className="rounded-t-lg object-contain p-1 md:h-2/5 md:w-2/5 md:max-w-md md:rounded-none md:rounded-l-lg"
+                  height={150}
+                  width={150}
+                  src={projet.img}
+                  alt={projet.alt}
+                  draggable={false}
+                />
+                <div className="flex flex-col justify-between overflow-hidden text-ellipsis p-4 leading-normal">
+                  <p className="select-none  pb-2 text-left text-2xl font-bold text-white">
+                    {projet.title}
+                  </p>
+                  <p className="select-none text-ellipsis text-left text-xl font-normal text-gray-300">
+                    {projet.desc}
+                  </p>
+                </div>
+              </a>
+            ) : (
+              <button
+                className="m-6 flex flex-col items-center overflow-hidden rounded-lg border-2 border-stone-800 bg-[#655A4E] shadow-md duration-300 hover:scale-105 hover:bg-[#5C534A] md:h-56 md:max-w-xl lg:h-64 lg:flex-row"
+                onClick={() => openModalProjects(projet.id)}
+              >
+                <Image
+                  className="rounded-t-lg object-contain p-1 md:h-2/5 md:w-2/5 md:max-w-md md:rounded-none md:rounded-l-lg"
+                  height={150}
+                  width={150}
+                  src={projet.img}
+                  alt={projet.alt}
+                  draggable={false}
+                />
+                <div className="flex flex-col justify-between overflow-hidden text-ellipsis p-4 leading-normal">
+                  <p className="select-none  pb-2 text-left text-2xl font-bold text-white">
+                    {projet.title}
+                  </p>
+                  <p className="select-none text-ellipsis text-left text-xl font-normal text-gray-300">
+                    {projet.desc}
+                  </p>
+                </div>
+              </button>
+            )}
             {showModal === projet.id && (
               <ModalProject
                 openModalProjects={openModalProjects}

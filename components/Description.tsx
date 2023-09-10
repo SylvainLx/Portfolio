@@ -31,8 +31,7 @@ function Description() {
         />
         <div className="flex flex-col">
           <p className="w-full select-none p-4 text-xl md:pr-24">
-            Je me présente, j&apos;ai 30 ans, je suis en couple et papa de 3
-            enfants.
+            Je me présente, j&apos;ai 31 ans, en couple et papa de 3 enfants.
           </p>
           <p className="w-full select-none p-4  text-xl md:pr-24">
             Après 7 ans en tant que Chef de rayon dans la grande distribution,
@@ -42,7 +41,7 @@ function Description() {
           <p className="w-full select-none p-4  text-xl md:pr-24">
             Issu d&apos;une formation à la Wild Code School, je vous propose mes
             services pour la réalisation et la gestion de vos sites internet :
-            site vitrine, mobile, e-commerce, blog, application web.
+            site vitrine, mobile, e-commerce, blog, application mobile.
           </p>
           <p className="w-full select-none p-4  text-xl md:pr-24">
             En naviguant sur mon site, vous trouverez mes réalisations.

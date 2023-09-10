@@ -16,7 +16,7 @@ function Intro() {
     <div className="h-[600px] w-screen bg-backgroundInto bg-cover shadow-2xl md:h-[750px]">
       <div className="align-center items-left flex flex-col p-12 leading-10 md:p-20 ">
         <h2 className="select-none text-4xl text-white  md:text-6xl">
-          DEVELOPPEUR WEB
+          DEVELOPPEUR WEB ET MOBILE
         </h2>
         <div className="flex flex-col p-4">
           <div className="m-2 grid grid-cols-3 md:grid-cols-4 lg:flex lg:flex-row">
@@ -52,6 +52,9 @@ function Intro() {
             </p>
             <p className="animate-fade-in-right6 select-none  text-xl">
               MaterialUI - ChakraUI - TailwindCSS
+            </p>
+            <p className="animate-fade-in-right6 select-none  text-xl">
+              Swift - SwiftUI
             </p>
           </div>
         </div>
