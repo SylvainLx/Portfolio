@@ -155,9 +155,9 @@ function Card() {
                   draggable={false}
                 />
                 <div className="flex flex-col justify-between overflow-hidden text-ellipsis p-4 leading-normal">
-                  <p className="select-none  pb-2 text-left text-2xl font-bold text-white">
+                  <h2 className="select-none  pb-2 text-left text-2xl font-bold text-white">
                     {projet.title}
-                  </p>
+                  </h2>
                   <p className="select-none text-ellipsis text-left text-xl font-normal text-gray-300">
                     {projet.desc}
                   </p>
@@ -177,9 +177,9 @@ function Card() {
                   draggable={false}
                 />
                 <div className="flex flex-col justify-between overflow-hidden text-ellipsis p-4 leading-normal">
-                  <p className="select-none  pb-2 text-left text-2xl font-bold text-white">
+                  <h3 className="select-none  pb-2 text-left text-2xl font-bold text-white">
                     {projet.title}
-                  </p>
+                  </h3>
                   <p className="select-none text-ellipsis text-left text-xl font-normal text-gray-300">
                     {projet.desc}
                   </p>

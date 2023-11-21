@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import Link from "next/link";
 
 type Links = {
@@ -8,8 +7,6 @@ type Links = {
 };
 
 function Navbar() {
-  const [navbar, setNavbar] = useState(false);
-
   const navLinks: Links[] = [
     {
       id: 2,
@@ -30,79 +27,32 @@ function Navbar() {
 
   return (
     <nav>
-      <div className="mx-auto justify-between px-4 md:flex md:items-center md:px-8 lg:max-w-7xl">
+      <div className="m-4 mx-auto flex w-10/12 flex-col items-center justify-between rounded-full bg-stone-100 bg-opacity-10 px-2 md:w-3/4 md:w-2/3 md:flex-row lg:px-4">
         <div>
-          <div className="flex items-center justify-between py-3 md:block md:py-5">
+          <div className="flex items-center px-2 py-2 md:py-4 md:px-0">
             <a href="#">
-              <h2 className="select-none text-2xl  font-bold  text-white duration-300 hover:text-yellow-500">
+              <h2 className="select-none rounded-full p-2 text-xl font-bold text-white duration-300 hover:bg-stone-600 hover:text-[#A5FB89] lg:text-2xl">
                 Sylvain LEGUAY
               </h2>
             </a>
-            <div className="md:hidden">
-              <button
-                id="navbar"
-                aria-label="menu"
-                className="rounded-md p-2 text-gray-700 outline-none focus:border focus:border-gray-400"
-                onClick={() => setNavbar(!navbar)}
-              >
-                {navbar ? (
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 text-white"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                ) : (
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 text-white"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M4 6h16M4 12h16M4 18h16"
-                    />
-                  </svg>
-                )}
-              </button>
-            </div>
           </div>
         </div>
         <div>
-          <div
-            className={`flex-1 justify-self-center pt-4 pb-3 transition-all duration-300 md:mt-0 md:block md:pt-0 md:pb-0 ${
-              navbar
-                ? "absolute z-20 -ml-4 block w-screen scroll-smooth  bg-[#383331] pl-5"
-                : "hidden"
-            } `}
-          >
-            <ul className="items-center justify-center space-y-8 md:flex md:space-x-20 md:space-y-0">
-              {navLinks &&
-                navLinks.map((link) => {
-                  return (
-                    <li key={link.text}>
-                      <Link
-                        href={link.href}
-                        scroll={false}
-                        className="scroll-smooth text-xl duration-300 hover:text-yellow-500 focus:text-yellow-500 active:text-yellow-600"
-                      >
-                        {link.text}
-                      </Link>
-                    </li>
-                  );
-                })}
-            </ul>
-          </div>
+          <ul className="mb-2 flex flex-row space-x-0 p-2 duration-300 md:mb-0 lg:space-x-10">
+            {navLinks.map((link) => {
+              return (
+                <li key={link.text}>
+                  <Link
+                    href={link.href}
+                    scroll={false}
+                    className="text-l  scroll-smooth rounded-full p-2 duration-300 hover:bg-stone-600 hover:text-[#A5FB89] focus:bg-stone-900 focus:text-[#A5FB89] md:m-0 md:p-2 lg:p-3"
+                  >
+                    {link.text}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </div>
     </nav>

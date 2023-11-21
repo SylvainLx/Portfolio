@@ -28,9 +28,7 @@ module.exports = {
           "35%, 40%": { transform: "translateX(4ch)" },
           "45%, 50%": { transform: "translateX(5ch)" },
           "55%, 60%": { transform: "translateX(6ch)" },
-          "65%, 70%": { transform: "translateX(7ch)" },
-          "75%, 80%": { transform: "translateX(8ch)" },
-          "85%, 100%": { transform: "translateX(10ch)" },
+          "65%, 100%": { transform: "translateX(7ch)" },
         },
         "fade-in-right": {
           "0%": {

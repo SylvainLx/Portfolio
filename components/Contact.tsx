@@ -33,34 +33,40 @@ function Contact() {
   ];
 
   return (
-    <div
+    <footer
       id="contact"
-      className="flex h-24 w-screen flex-row items-center justify-center space-x-2 overflow-hidden overflow-x-hidden bg-gradient-to-t from-black pl-2 md:space-x-8 md:pl-6 lg:space-x-24 "
+      className="border-blue-gray-50 flex w-full flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 overflow-hidden overflow-x-hidden border-t bg-gradient-to-t from-black px-8 py-6 md:justify-between"
     >
-      {Links &&
-        Links.map((link) => {
+      <p color="blue-gray" className="font-normal">
+        &copy; 2023 Sylvain LEGUAY
+      </p>
+      <ul className="flex flex-wrap items-center gap-y-2 gap-x-8">
+        {Links.map((link) => {
           return (
-            <Link
-              key={link.id}
-              href={link.href}
-              target={link.target}
-              className="flex h-12 w-48 items-center justify-center rounded-xl border-2 border-stone-800 bg-[#655A4E] text-center duration-300 hover:scale-110 hover:shadow-lg "
-            >
-              {link.name}
-            </Link>
+            <li key={link.id}>
+              <Link
+                href={link.href}
+                target={link.target}
+                className="flex h-12 w-36 items-center justify-center rounded-full bg-[#A5FB89]  text-black shadow-md duration-300 hover:scale-110 hover:border-2 hover:shadow-lg  md:w-48"
+              >
+                {link.name}
+              </Link>
+            </li>
           );
         })}
+      </ul>
+
       <a href="#">
         <Image
           src={arrowUp}
-          alt="logo"
-          className="fixed right-3 bottom-20 z-40 scroll-smooth hover:scale-125 lg:right-12 lg:bottom-8"
+          alt="backToTop"
+          className="fixed right-3 bottom-20 z-40 scroll-smooth hover:scale-125 lg:right-12 lg:bottom-6"
           height={50}
           width={50}
           draggable={false}
         />
       </a>
-    </div>
+    </footer>
   );
 }
 

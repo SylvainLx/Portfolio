@@ -29,7 +29,7 @@ function ModalProject(props: Modal) {
             X
           </button>
           <div className="relative flex h-fit w-full flex-col items-center justify-center space-y-12 rounded-lg border-0 bg-[#383331] text-3xl shadow-lg outline-none focus:outline-none">
-            <p className="select-none drop-shadow-xl">{props.title}</p>
+            <h3 className="select-none drop-shadow-xl">{props.title}</h3>
             <p className="select-none pb-2 text-center text-xl">
               {props.modalDesc}
             </p>
