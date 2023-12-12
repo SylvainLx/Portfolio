@@ -180,7 +180,6 @@ function CarouselWeb() {
               <div className="xl:mx-8 xl:my-12">
                 <Swiper
                   grabCursor={true}
-                  pagination={true}
                   effect={"creative"}
                   creativeEffect={{
                     prev: {
@@ -190,6 +189,9 @@ function CarouselWeb() {
                     next: {
                       translate: ["100%", 0, 0],
                     },
+                  }}
+                  pagination={{
+                    clickable: true,
                   }}
                   modules={[EffectCreative, Pagination]}
                   className="mySwiper"

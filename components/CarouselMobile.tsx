@@ -69,7 +69,7 @@ const CarouselMobile = () => {
     {
       id: 3,
       title: "MyEcoTribe",
-      desc: "Application iOS réseaux social sur les éco-gestes.",
+      desc: "Application iOS réseaux social sur la sensibilisation des éco-gestes.",
       modalDesc:
         "Projet Apple Foundation Program. Application réseau social pour les jeunes dans le but de la sensibilisation aux éco-gestes, avec de la gamification. Stack : Swift, SwiftUI, MapKit",
       img: ecotribe1,
@@ -97,7 +97,7 @@ const CarouselMobile = () => {
               key={projet.id}
               className="rounded-3xl bg-stone-100 bg-opacity-10  md:m-12  2xl:flex 2xl:flex-col 2xl:items-center 2xl:justify-center"
             >
-              <div className="m-8">
+              <div className="m-8 w-10/12 text-left">
                 <h2 className="text-xl">{projet.title}</h2>
                 <h3>{projet.desc}</h3>
               </div>
@@ -105,7 +105,9 @@ const CarouselMobile = () => {
                 <Swiper
                   effect={"cards"}
                   grabCursor={true}
-                  pagination={true}
+                  pagination={{
+                    clickable: true,
+                  }}
                   modules={[EffectCards, Pagination]}
                   className="mySwiper2"
                   slidesPerView={1}

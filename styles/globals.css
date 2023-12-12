@@ -5,8 +5,14 @@
 @layer base {
   html {
     @apply scroll-smooth;
-    font-family: Segoe UI Mono, monospace;
+    font-family: "Goudy Bookletter 1911";
   }
+}
+
+h1,
+h2,
+h3 {
+  font-family: Georgia;
 }
 
 .cursor::after {

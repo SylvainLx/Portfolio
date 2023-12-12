@@ -22,7 +22,7 @@ function Contact() {
     },
     {
       id: 3,
-      href: "mailto:leguay.sylvain40@gmail.com",
+      href: "mailto:contact@sylvainleguay.fr",
       name: "Mail",
     },
     {
@@ -56,7 +56,7 @@ function Contact() {
         })}
       </ul>
 
-      <a href="#">
+      <a href="#" id="backtotop">
         <Image
           src={arrowUp}
           alt="backToTop"

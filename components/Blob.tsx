@@ -1,7 +1,7 @@
 function Blob({ width, height }: { width?: string; height?: string }) {
   return (
     <div
-      className={`h-24 w-24 md:w-${width} md:h-${height} blur-xl md:blur-3xl`}
+      className={`h-24 w-24 md:w-${width} md:h-${height} overflow-hidden blur-xl  md:blur-3xl`}
     >
       <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
         <path

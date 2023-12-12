@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useState, useEffect } from "react";
 
 import {
@@ -64,14 +66,15 @@ function CircleIcons() {
     return (
       <div
         key={icon.key}
-        className="absolute hover:scale-105"
         style={{
           top: `${y}px`,
           left: `${x}px`,
         }}
+        className="absolute hover:scale-105"
         onMouseEnter={() => setHoveredIcon(String(icon.key))}
         onMouseLeave={() => setHoveredIcon("Skills")}
       >
+        
         {icon}
       </div>
     );
