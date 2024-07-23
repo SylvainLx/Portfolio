@@ -44,6 +44,7 @@ import healthy1 from "../public/sreenProject/healthylife/healthy1.webp";
 import healthy2 from "../public/sreenProject/healthylife/healthy2.webp";
 import healthy3 from "../public/sreenProject/healthylife/healthy3.webp";
 import decoevasion from "../public/sreenProject/logo2-evasion.png";
+import elodiehometherapy from "../public/sreenProject/logo-elodiehometherapy.png";
 
 type Projet = {
   id: number;
@@ -137,6 +138,16 @@ function CarouselWeb() {
       imgs: [decoevasion, decoevasion],
       alt: "Logo DecoEvasion",
       url: "https://deco-evasion.fr/",
+    },
+    {
+      id: 2,
+      title: "Elodie Home Therapy",
+      desc: "Site web et e-commerce d'article feng shui.",
+      modalDesc: "Elodie Home Therapy",
+      img: elodiehometherapy,
+      imgs: [elodiehometherapy, elodiehometherapy],
+      alt: "Logo ElodieHomeTherapy",
+      url: "https://elodiehometherapy.fr/",
     },
   ];
 

@@ -16,12 +16,13 @@ import {
   GithubIcon,
   GitIcon,
   FirebaseIcon,
+  PythonIcon
 } from "./Icons";
 
 function CircleIcons() {
   const icons = [
     <SwiftIcon key="Swift" />,
-    <HtmlIcon key="HTML" />,
+    // <HtmlIcon key="HTML" />,
     <CssIcon key="CSS" />,
     <JsIcon key="JavaScript" />,
     <ReactIcon key="ReactJS" />,
@@ -33,6 +34,7 @@ function CircleIcons() {
     <GithubIcon key="GitHub" />,
     <GitIcon key="Git" />,
     <FirebaseIcon key="Firebase" />,
+    <PythonIcon key="Python" />,
   ];
 
   const [radius, setRadius] = useState(300);
@@ -74,7 +76,7 @@ function CircleIcons() {
         onMouseEnter={() => setHoveredIcon(String(icon.key))}
         onMouseLeave={() => setHoveredIcon("Skills")}
       >
-        
+
         {icon}
       </div>
     );
