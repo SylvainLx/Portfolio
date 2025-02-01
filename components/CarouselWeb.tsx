@@ -45,6 +45,7 @@ import healthy2 from "../public/sreenProject/healthylife/healthy2.webp";
 import healthy3 from "../public/sreenProject/healthylife/healthy3.webp";
 import decoevasion from "../public/sreenProject/logo2-evasion.png";
 import elodiehometherapy from "../public/sreenProject/logo-elodiehometherapy.png";
+import seabohemiya from "../public/sreenProject/logo-seabohemiya.png";
 
 type Projet = {
   id: number;
@@ -55,6 +56,7 @@ type Projet = {
   imgs: StaticImageData[];
   alt: string;
   url?: string;
+  disabled?: boolean
 };
 
 function CarouselWeb() {
@@ -137,7 +139,7 @@ function CarouselWeb() {
       img: decoevasion,
       imgs: [decoevasion, decoevasion],
       alt: "Logo DecoEvasion",
-      url: "https://deco-evasion.fr/",
+      disabled: true,
     },
     {
       id: 2,
@@ -148,17 +150,29 @@ function CarouselWeb() {
       imgs: [elodiehometherapy, elodiehometherapy],
       alt: "Logo ElodieHomeTherapy",
       url: "https://elodiehometherapy.fr/",
+      disabled: false
+    },
+    {
+      id: 3,
+      title: "Sea-Bohemiya",
+      desc: "Site web d'une coach intuitive",
+      modalDesc: "Sea-Bohemiya",
+      img: seabohemiya,
+      imgs: [seabohemiya, seabohemiya],
+      alt: "Logo Sea-Bohemiya",
+      url: "https://sea-bohemiya.fr/",
+      disabled: false
     },
   ];
 
   return (
     <div className="flex flex-col items-center">
-      <h3 className="m-8 text-2xl font-bold">Sites en ligne</h3>
+      <h3 className="m-8 text-2xl font-bold">Sites</h3>
       <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
         {onlineProjects.map((projet) => {
           return (
             <div key={projet.id}>
-              <a href={projet.url} target="blank">
+              {!projet.disabled ? <a href={projet.url || "#"} target={projet.disabled ? undefined : "blank"} >
                 <Image
                   src={projet.img}
                   alt={projet.alt}
@@ -167,7 +181,15 @@ function CarouselWeb() {
                   height={300}
                   className="rounded-xl bg-white"
                 />
-              </a>
+              </a> : <Image
+                src={projet.img}
+                alt={projet.alt}
+                width={400}
+                draggable={false}
+                height={300}
+                className="rounded-xl bg-white opacity-70"
+              />}
+
             </div>
           );
         })}
